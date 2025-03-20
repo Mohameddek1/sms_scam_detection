@@ -29,25 +29,25 @@ The dataset used in this project is the **Swahili SMS Detection Dataset**, conta
 ---
 
 ## ⚙️ Setup
-### 1️⃣ Clone the repository
+### 1⃣ Clone the repository
 ```bash
 git clone https://github.com/Mohameddek1/swahili-sms-scam-detection.git
 cd swahili-sms-scam-detection
 ```
 
-### 2️⃣ Install dependencies
+### 2⃣ Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Download NLTK resources
+### 3⃣ Download NLTK resources
 ```python
 import nltk
 nltk.download("punkt")
 nltk.download("stopwords")
 ```
 
-### 4️⃣ Download and place the dataset
+### 4⃣ Download and place the dataset
 - Download the dataset from [Kaggle](https://www.kaggle.com/datasets/henrydioniz/swahili-sms-detection-dataset).
 - Save it in the `data/` folder as `bongo_scam.csv`.
 
@@ -84,9 +84,9 @@ Precision: 0.93 | Recall: 0.92 | F1-Score: 0.93
 ```
 
 ### ✅ **Transformer Model (AfroXLMR)**
-- **Accuracy**: 94.8%
+- **Accuracy**: Low (incorrect)
 ```
-Precision: 0.95 | Recall: 0.94 | F1-Score: 0.95
+Precision: N/A | Recall: N/A | F1-Score: N/A
 ```
 
 ### 🔥 **Word Clouds**
@@ -96,11 +96,12 @@ Precision: 0.95 | Recall: 0.94 | F1-Score: 0.95
 **Non-Scam Messages**
 ![Non-Scam Word Cloud](reports/visualizations/non_scam_wordcloud.png)
 
-
 ---
 
 ## 🚀 Future Work
-🔹 Test multilingual models for broader scam detection.
+🔹 Investigate why the transformer model underperforms.
+🔹 Tune hyperparameters to improve transformer accuracy.
+🔹 Consider alternative transformer models.
 🔹 Deploy a real-time scam detection system.
 🔹 Analyze the impact of message length on scam classification.
 
@@ -112,7 +113,7 @@ Precision: 0.95 | Recall: 0.94 | F1-Score: 0.95
 
 ---
 
-## 📜 License
+## 🐝 License
 This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ---
